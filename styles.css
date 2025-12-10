@@ -1,1 +1,117 @@
-/*  your css code here. If applicable */
+/* Basic Reset and Layout */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Customizing basic form layout to match the image */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    width: 60%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end; /* Aligns the submit button with inputs */
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Distributes input space equally */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+/* Custom class: table-striped */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Delete Button */
+.delete {
+    background: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.delete:hover {
+    background: #c82333;
+}
+
+/* Specific styling for the submit button in the form */
+#book-form button {
+    flex: 1; /* Ensures the button takes up proportional space */
+    align-self: flex-end;
+    height: 40px; /* Aligns height with input fields */
+}
